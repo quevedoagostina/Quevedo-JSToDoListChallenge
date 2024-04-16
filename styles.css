@@ -1,0 +1,34 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .list-group-item {
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: #380606;
+  }
+  
+  .btn-danger {
+    float: right;
+    margin-left: 10px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+.navbar {
+  margin-bottom: 30px;
+  color: rgb(14, 4, 31);
+}
