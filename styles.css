@@ -1,52 +1,43 @@
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
+body.default {
+  background-color: #f8f9fa;
+  color: #343a40;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
+body.light {
+  background-color: #fff;
+  color: #212529;
+}
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+body.dark {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+.navbar {
+  margin-bottom: 30px;
+  background-color: #e9ecef;
 }
 
 .list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   animation: fadeIn 0.5s ease-out;
 }
 
 .completed {
   text-decoration: line-through;
-  color: #93c47e;
+  color: #6c757d;
 }
 
-.btn-primary {
-  background-color: #2196f3;
-  border-color: #2196f3;
-}
-
-.btn-primary:hover {
-  background-color: #1976d2;
-}
-
-.btn-danger {
-  transition: background-color 0.3s ease;
-}
-
-.btn-danger:hover {
-  background-color: #dc3545;
-}
-
-input[type="checkbox"] {
+.btn-outline-primary {
   margin-right: 5px;
 }
 
-.navbar {
-  margin-bottom: 30px;
-  color: rgb(14, 4, 31);
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.btn-primary, .btn-danger {
+  transition: background-color 0.3s ease;
 }

@@ -12,17 +12,18 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Lista de Tareas</a>
+      <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#settings-modal">Configuración</button>
     </div>
   </nav>
 
   <div class="container mt-5">
     <h1 class="mb-3">Agregar Tarea</h1>
 
-    <form id="todo-form">
-      <div class="mb-3">
+    <form id="todo-form" class="d-flex justify-content-between">
+      <div class="mb-3 flex-grow-1 me-2">
         <input type="text" class="form-control" id="todo-input" placeholder="Agregar nueva tarea" required>
       </div>
-      <button type="submit" class="btn btn-primary">Agregar</button>
+      <button type="submit" class="btn btn-primary mb-3">Agregar</button>
     </form>
 
     <ul id="todo-list" class="list-group mt-3"></ul>
@@ -33,6 +34,7 @@
     <ul id="completed-list" class="list-group"></ul>
   </div>
 
+  <!-- Configuración del Modal -->
   <div id="settings-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="settingsModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -58,6 +60,7 @@
     </div>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
