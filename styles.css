@@ -1,32 +1,50 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .list-group-item {
-    animation: fadeIn 0.5s ease-out;
-  }
-  
-  .completed {
-    text-decoration: line-through;
-    color: #380606;
-  }
-  
-  .btn-danger {
-    float: right;
-    margin-left: 10px;
-  }
-  
-  input[type="checkbox"] {
-    margin-right: 5px;
-  }
+}
+
+.list-group-item {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #93c47e;
+}
+
+.btn-primary {
+  background-color: #2196f3;
+  border-color: #2196f3;
+}
+
+.btn-primary:hover {
+  background-color: #1976d2;
+}
+
+.btn-danger {
+  transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: #dc3545;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
 
 .navbar {
   margin-bottom: 30px;
